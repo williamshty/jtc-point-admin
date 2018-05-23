@@ -1,12 +1,20 @@
-# jtc-point-admin
+# Web App for IS4302 Artbook
 
-> A Vue.js project
+### Development Stack
+><b style="color:#1BBC9B;background">Vue.js</b> as application framework<br/>
+><b style="color:#674172;">Bootstrap</b> as styling library<br/>
+><b style="color:#19B5FE;">Element UI</b> as components library<br/>
+><b style="color:#DB0A5B;">Sass</b> for customized styling, you can find the scss files in `src/assets/sass`<br/>
 
-## Build Setup
+
+### Build Setup
 
 ``` bash
 # install dependencies
 npm install
+
+# compile sass code to css code
+npm run compile:sass
 
 # serve with hot reload at localhost:8080
 npm run dev
@@ -14,8 +22,19 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### To switch from connecting to virtual machine and connecting to local machine
+#### find the constants file the stores paths
+the file can be found in `src/const.js` 
+
+#### Follow the instructions given in the comment to comment and  uncomment correct lines of code
+``` javascript
+// path to be used to connect middleware running on virtual machine
+export const VM_PATH = "http://172.25.96.201:3000/" 
+// path to be used to connect middleware running on local machine
+export const LOCAL_PATH = "http://localhost:3000/"
+// export const baseUrl = VM_PATH
+// uncomment the line above and comment the line below to use middleware running on virtual machine
+export const baseUrl = LOCAL_PATH
+```
