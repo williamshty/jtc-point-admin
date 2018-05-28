@@ -7,7 +7,7 @@
   ],
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --https --cert certs/server.crt --key certs/server.key --open --hot --host 0.0.0.0 --port 8080",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --open --host 0.0.0.0 --port 8080 --https --cert certs/server.crt --key certs/server.key",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
