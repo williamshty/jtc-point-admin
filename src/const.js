@@ -8,8 +8,8 @@ export const LOCAL_PATH = "http://172.16.162.87:3000/"
 
 
 // Select one of these two lines
-// export const baseUrl = VM_PATH
-export const baseUrl = LOCAL_PATH
+export const baseUrl = VM_PATH
+// export const baseUrl = LOCAL_PATH
 
 export const artworks = [
   {

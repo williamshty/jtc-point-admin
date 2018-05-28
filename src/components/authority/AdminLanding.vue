@@ -20,21 +20,21 @@
             </el-table-column>
             <el-table-column label="View Picture">
               <template slot-scope="scope">
-                <el-button class="btn--history"
+                <el-button class="btn--show"
                 @click="showProductPic(scope.row)">
                 Show</el-button>
               </template>
             </el-table-column>
             <el-table-column label="Update">
               <template slot-scope="scope">
-                <el-button class="btn--history"
+                <el-button class="btn--update"
                 @click="editProduct(scope.row)">
                 Update</el-button>
               </template>
             </el-table-column>
             <el-table-column label="Restock">
               <template slot-scope="scope">
-                <el-button class="btn--history"
+                <el-button class="btn--restock"
                 @click="restockProduct(scope.row)">
                 Add</el-button>
               </template>
@@ -179,14 +179,19 @@ html{
     color: #ffffff;
     border-color: #68C3A3;
   }
-  .btn--history {
-    background-color: #68C3A3;
+  .btn--show {
+    background-color: #913D88;
     color: #ffffff;
-    border-color: #68C3A3;
+    border-color: #913D88;
   }
-  .btn--document {
-    background-color: #22A7F0;
+  .btn--update {
+    background-color: #96281B;
     color: #ffffff;
-    border-color: #22A7F0;
+    border-color: #96281B;
+  }
+  .btn--restock {
+    background-color: #D35400;
+    color: #ffffff;
+    border-color: #D35400;
   }
 </style>
